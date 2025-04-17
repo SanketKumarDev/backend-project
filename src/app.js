@@ -14,6 +14,16 @@ app.use(express.urlencoded({extended:true,limit:"20kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
 
+//routes import
+
+import userRouter from "./routes/user.routes.js"
 
 
-export{app}
+//routes decleartion
+
+app.use("/api/v1/users",userRouter)
+
+//after /users---> all control goes to router
+// EX- http://localhost:8000/api/v1/users/register (api/vi)is standered practice
+
+export {app}
