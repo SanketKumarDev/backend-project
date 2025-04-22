@@ -11,7 +11,7 @@ import {
     updateUserAvatar,
     updateUserCoverImage
      } from "../controllers/user.controller.js";
-     
+
 import {upload} from "../middlewares/multer.middlewere.js"
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 import { refreshAccessToken } from "../controllers/user.controller.js";
